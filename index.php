@@ -52,10 +52,83 @@
                 </button>
             </div>
         </div>
-        <div>
-            
+
+        <div class="div-products">
+            <div class="div-title">
+                <div class="div-title-img">
+                    <img src="public/img/Logo-title.png" alt="CandyRawr Logo Title">
+                </div>
+                <h1>Products</h1>
+            </div>
+        </div>
+
+        <div class="div-items">
+            <a href="">
+                <div class="item">
+                    <div class="item-img">
+                        <img src="public/img/Logo-title.png" alt="img Item">
+                    </div>
+                    <div class="item-info">
+                        <h3>Product Name</h3>
+                        <h4>$ 38000</h4>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+            </a>
+            <a href="">
+                <div class="item">
+                    <div class="item-img">
+                        <img src="public/img/Logo-title.png" alt="img Item">
+                    </div>
+                    <div class="item-info">
+                        <h3>Product Name</h3>
+                        <h4>$ 38000</h4>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+            </a>
+            <a href="">
+                <div class="item">
+                    <div class="item-img">
+                        <img src="public/img/Logo-title.png" alt="img Item">
+                    </div>
+                    <div class="item-info">
+                        <h3>Product Name</h3>
+                        <h4>$ 38000</h4>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+            </a>
+            <a href="">
+                <div class="item">
+                    <div class="item-img">
+                        <img src="public/img/Logo-title.png" alt="img Item">
+                    </div>
+                    <div class="item-info">
+                        <h3>Product Name</h3>
+                        <h4>$ 38000</h4>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+            </a>
+            <a href="">
+                <div class="item">
+                    <div class="item-img">
+                        <img src="public/img/Logo-title.png" alt="img Item">
+                    </div>
+                    <div class="item-info">
+                        <h3>Product Name</h3>
+                        <h4>$ 38000</h4>
+                    </div>
+                    <button>Add to cart</button>
+                </div>
+            </a>
         </div>
     </main>
+
+<footer>
+    
+</footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 </html>
