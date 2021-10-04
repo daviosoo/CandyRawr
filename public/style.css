@@ -97,7 +97,7 @@ header{
     text-decoration: none;
 }
 .item{
-    width: 16rem;
+    width: 17rem;
     height: 26rem;
     margin: 0 1rem 1rem;
     background: #8DA747;
@@ -124,6 +124,7 @@ header{
     justify-content: center;
     align-items: center;
     background: transparent;
+    padding: 0 1rem;
     margin: 0 auto;
     transition: background-color .3s;
 }
@@ -132,6 +133,7 @@ header{
 }
 
 .item-info h3{
+    font-size: 1.3rem;
     color: #E6FFDB;
 }
 .item-info h4{
