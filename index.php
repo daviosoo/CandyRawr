@@ -33,13 +33,13 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                    <img src="public/img/img.jfif" class="d-block img-banner" alt="...">
+                    <img src="public/img/Bann1.png" class="d-block img-banner" alt="...">
                     </div>
                     <div class="carousel-item">
-                    <img src="public/img/img-2.jfif" class="d-block img-banner" alt="...">
+                    <img src="public/img/Bann2.png" class="d-block img-banner" alt="...">
                     </div>
                     <div class="carousel-item">
-                    <img src="public/img/img.jfif" class="d-block img-banner" alt="...">
+                    <img src="public/img/Bann3.png" class="d-block img-banner" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -66,11 +66,11 @@
             <a href="">
                 <div class="item">
                     <div class="item-img">
-                        <img src="public/img/Logo-title.png" alt="img Item">
+                        <img src="public/img/Aros.png" alt="img Item">
                     </div>
                     <div class="item-info">
-                        <h3>Product Name</h3>
-                        <h4>$ 38000</h4>
+                        <h3>Trululu Snacks Aros/Caja x 12 Bolsas</h3>
+                        <h4>$ 16.200</h4>
                     </div>
                     <button>Add to cart</button>
                 </div>
@@ -78,11 +78,11 @@
             <a href="">
                 <div class="item">
                     <div class="item-img">
-                        <img src="public/img/Logo-title.png" alt="img Item">
+                        <img src="public/img/Gusanos.png" alt="img Item">
                     </div>
                     <div class="item-info">
-                        <h3>Product Name</h3>
-                        <h4>$ 38000</h4>
+                        <h3>Trululu Snacks Gusanos Aceitados/Caja x 12 Bolsas</h3>
+                        <h4>$ 16.200</h4>
                     </div>
                     <button>Add to cart</button>
                 </div>
@@ -90,11 +90,11 @@
             <a href="">
                 <div class="item">
                     <div class="item-img">
-                        <img src="public/img/Logo-title.png" alt="img Item">
+                        <img src="public/img/Splash.png" alt="img Item">
                     </div>
                     <div class="item-info">
-                        <h3>Product Name</h3>
-                        <h4>$ 38000</h4>
+                        <h3>Trululu Snacks Splash/Caja x 12 Bolsas</h3>
+                        <h4>$ 16.200</h4>
                     </div>
                     <button>Add to cart</button>
                 </div>
@@ -102,11 +102,11 @@
             <a href="">
                 <div class="item">
                     <div class="item-img">
-                        <img src="public/img/Logo-title.png" alt="img Item">
+                        <img src="public/img/frankie.png" alt="img Item">
                     </div>
                     <div class="item-info">
-                        <h3>Product Name</h3>
-                        <h4>$ 38000</h4>
+                        <h3>Trululu Snacks Franki Halloween</h3>
+                        <h4>$ 15.900</h4>
                     </div>
                     <button>Add to cart</button>
                 </div>
@@ -114,11 +114,11 @@
             <a href="">
                 <div class="item">
                     <div class="item-img">
-                        <img src="public/img/Logo-title.png" alt="img Item">
+                        <img src="public/img/masmelos.png" alt="img Item">
                     </div>
                     <div class="item-info">
-                        <h3>Product Name</h3>
-                        <h4>$ 38000</h4>
+                        <h3>Trululu Masmelos Barrilete/Caja x 12 Bolsas</h3>
+                        <h4>$ 16.200</h4>
                     </div>
                     <button>Add to cart</button>
                 </div>
