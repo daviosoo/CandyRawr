@@ -144,3 +144,25 @@ main{
     height: 100%;
     object-fit: scale-down;
 }
+
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
+    background-color: var(--aqua-green);
+}
+footer div a,p{
+    margin: 0;
+    color: var(--green-light);
+}
+footer div a{
+    font-size: 2rem;
+    transition: all .3s;
+    margin: 0 .2rem;
+}
+footer div a:hover{
+    color: #cde6c3;
+}

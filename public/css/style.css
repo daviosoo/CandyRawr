@@ -18,6 +18,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    user-select: none;
 }
 
 .div-logo{
@@ -66,6 +67,7 @@ header{
 .div-products{
     width: 100%;
     margin-top: 3rem;
+    user-select: none;
 }
 .div-title{
     display: flex;
@@ -161,6 +163,22 @@ header{
 
 footer{
     width: 100%;
-    height: 10rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem 0;
     background-color: var(--aqua-green);
+}
+footer div a,p{
+    margin: 0;
+    color: var(--green-light);
+}
+footer div a{
+    font-size: 2rem;
+    transition: all .3s;
+    margin: 0 .2rem;
+}
+footer div a:hover{
+    color: #cde6c3;
 }

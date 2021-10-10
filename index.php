@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/823f41097b.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="public/img/Jimmy.png" type="image/x-png">
     <link rel="stylesheet" href="public/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -130,7 +131,11 @@
     </main>
 
 <footer>
-    
+    <div>
+        <p>Copyright &#169 2021 CandyRawr - All Rights Reserved</p>
+        <a href="https://cutt.ly/OQ6nOwa" target="_BLANK"><i class="fas fa-globe"></i></a>
+        <a href="https://github.com/daviosoo" target="_BLANK"><i class="fab fa-github"></i></a>
+    </div>
 </footer>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
