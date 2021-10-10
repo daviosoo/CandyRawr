@@ -1,16 +1,17 @@
+@import url(global.css);
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Montserrat', sans-serif;
+    font-family: var(--font);
 }
 body{
-    background: #E6FFDB !important;
+    background: var(--green-light) !important;
 }
 header{
     width: 100%;
     height: 7rem;
-    background: #4FC3B3;
+    background: var(--aqua-green);
 }
 
 .nav{
@@ -42,24 +43,24 @@ header{
     padding: .5rem;
     margin: 1rem;
     transition: border-bottom .5s;
-    border-bottom: #4FC3B3 .2rem solid;
+    border-bottom: var(--aqua-green) .2rem solid;
 }
 .items li:hover{
-    border-bottom: #E6FFDB .2rem solid;
+    border-bottom: var(--green-light) .2rem solid;
 }
 .items li a{
     text-decoration: none;
-    color: #E6FFDB;
+    color: var(--green-light);
     font-weight: 600;
 }
 
 .div-banner{
     width: 100%;
-    height: 40rem;
+    height: auto;
 }
 .img-banner{
     width: 100%;
-    height: 640px;
+    height: auto;
 }
 
 .div-products{
@@ -81,7 +82,7 @@ header{
     object-fit: cover;
 }
 .div-title h1{
-    color: #4FC3B3;
+    color: var(--aqua-green);
     font-weight: 800;
 }
 
@@ -100,18 +101,21 @@ header{
     width: 17rem;
     height: 26rem;
     margin: 0 1rem 1rem;
-    background: #8DA747;
+    background: var(--green);
     border-radius: 15px;
     overflow: hidden;
 }
 .item-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 100%;
     height: 50%;
     background: transparent;
 }
 .item-img img{
     width: 100%;
-    height: 100%;
+    max-height: 100%;
     object-fit: scale-down;
 }
 
@@ -134,29 +138,29 @@ header{
 
 .item-info h3{
     font-size: 1.3rem;
-    color: #E6FFDB;
+    color: var(--green-light);
 }
 .item-info h4{
-    color: #E6FFDB;
+    color: var(--green-light);
     font-weight: 300;
 }
 .item button{
     width: 100%;
     height: 15%;
     border: none;
-    background-color: #4FC3B3;
-    color: #E6FFDB;
+    background-color: var(--aqua-green);
+    color: var(--green-light);
     font-size: large;
     font-weight: 600;
     transition: background-color .3s;
 }
 
 .item button:hover{
-    background-color: #4ab6a7;
+    background-color: #46afa1;
 }
 
 footer{
     width: 100%;
     height: 10rem;
-    background-color: #4ab6a7;
+    background-color: var(--aqua-green);
 }
