@@ -58,11 +58,48 @@ header{
 .div-banner{
     width: 100%;
     height: auto;
-}
+box-shadow: 0px 27px 37px -15px rgba(211,243,198,1);}
 .img-banner{
     width: 100%;
     height: auto;
 }
+
+.div-kind{
+
+    width: 100%;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--aqua-green);
+}
+
+.div-kind .candy{
+    
+    width: 16rem;
+    height: 16rem;
+    margin: 2rem;
+    padding: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: var(--green-light);
+    color: var(--aqua-green);
+    border-radius: 40%;
+
+}
+
+.div-kind .candy i{
+    font-size: 7rem;
+    margin-bottom: 1rem;
+}
+
+.div-kind .candy h3{
+    font-weight: 600;
+}
+
 
 .div-products{
     width: 100%;
@@ -106,6 +143,7 @@ header{
     background: var(--green);
     border-radius: 15px;
     overflow: hidden;
+    box-shadow: 0px 10px 39px -15px rgba(141,167,71,0.87);
 }
 .item-img{
     display: flex;

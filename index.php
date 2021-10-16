@@ -57,6 +57,21 @@
             </div>
         </div>
 
+        <div class="div-kind">
+            <div class="candy">
+                <i class="fas fa-candy-cane"></i>
+                <h3>Candy Bar</h3>
+            </div>
+            <div class="candy">
+                <i class="fas fa-cookie"></i>
+                <h3>Cookies</h3>
+            </div>
+            <div class="candy">
+                <i class="fas fa-ice-cream"></i>
+                <h3>Ice Cream</h3>
+            </div>
+        </div>
+
         <div class="div-products" id="products">
             <div class="div-title">
                 <div class="div-title-img">
