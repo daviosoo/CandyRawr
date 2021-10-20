@@ -58,7 +58,7 @@ header{
 .div-banner{
     width: 100%;
     height: auto;
-box-shadow: 0px 27px 37px -15px rgba(211,243,198,1);}
+}
 .img-banner{
     width: 100%;
     height: auto;
@@ -67,7 +67,6 @@ box-shadow: 0px 27px 37px -15px rgba(211,243,198,1);}
 .div-kind{
 
     width: 100%;
-    margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
