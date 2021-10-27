@@ -166,3 +166,7 @@ footer div a{
 footer div a:hover{
     color: #cde6c3;
 }
+
+.bg-modal{
+    background-color: var(--aqua-green) !important;
+}

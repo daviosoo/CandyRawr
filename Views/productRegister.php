@@ -70,11 +70,11 @@
         <div class="modal fade" id="modal" tabindex="-1">
           <div class="modal-dialog">
             <div class="modal-content">
-              <div class="modal-header bg-primary text-white">
+              <div class="modal-header text-white" style="background-color:#4FC3B3">
                 <h5 class="modal-title" id="exampleModalLabel">CandyRawr</h5>
                 <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
               </div>
-              <div class="modal-body text-dark">
+              <div class="modal-body text-dark" >
                 <h5><?php echo($_SESSION['mensaje'])?></h5>
               </div>
             </div>
@@ -92,7 +92,7 @@
     </div>
     </footer>
 
-<script type="module" src="../public/js/modal.js"></script>
+<script type="module" src="../public/js/showmodal.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 </html>
