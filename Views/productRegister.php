@@ -1,3 +1,9 @@
+<?php
+  if(!isset($_SESSION)){
+    session_start();
+  }
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,6 +18,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <title>CandyRawr</title>
+
 </head>
 <body>
     <header>
@@ -41,19 +48,41 @@
                         <h1>Product Management</h1>
                     </div>
                 </div>
-                <form action="" method="POST" class="form">
-                    <input type="text" placeholder="Name" class="input-form">
-                    <input type="text" placeholder="Brand" class="input-form">
-                    <input type="text" placeholder="Price" class="input-form">
-                    <textarea placeholder="Description" class="input-form area"></textarea>
+                <form action="../Controllers/prController.php" method="POST" class="form">
 
-                    <input type="submit" class="input-form submit" value="ADD">
+                    <input type="text" placeholder="Name" class="input-form" name="name">
+                    <input type="text" placeholder="Brand" class="input-form" name="brand">
+                    <input type="text" placeholder="Price" class="input-form" name="price">
+                    <input type="text" placeholder="Photo" class="input-form" name="photo">
+                    <textarea placeholder="Description" class="input-form area" name="description"></textarea>
+
+                    <input type="submit" class="input-form submit" value="ADD" name="button">
                 </form>
             </div>
             <div class="jimmy-img"><img src="../public/img/Jimmy.png" alt="Jimmy"></div>
+            
         </div>
 
     </main>
+
+    <section>
+      <?php if(isset($_SESSION['mensaje'])):?>
+        <div class="modal fade" id="modal" tabindex="-1">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="exampleModalLabel">CandyRawr</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body text-dark">
+                <h5><?php echo($_SESSION['mensaje'])?></h5>
+              </div>
+            </div>
+          </div>
+        </div>
+      <?php unset($_SESSION['mensaje'])?>
+      <?php endif ?>
+    </section>
 
     <footer>
     <div>
@@ -62,7 +91,8 @@
         <a href="https://github.com/daviosoo" target="_BLANK"><i class="fab fa-github"></i></a>
     </div>
     </footer>
-    
+
+<script type="module" src="../public/js/modal.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 </html>
