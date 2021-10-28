@@ -21,7 +21,7 @@
             </div>
             <ul class="items">
                 <li><a href="index.php">Home</a></li>
-                <li><a href="#products">Products</a></li>
+                <li><a href="views/listProduct.php">Products</a></li>
                 <li><a href="views/productRegister.php">Product Management</a></li>
             </ul>
         </nav>
