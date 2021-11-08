@@ -26,18 +26,16 @@
             <div class="div-logo">
                 <a href="../index.php"><img class="img-logo" src="../public/img/Logo.png" alt="CandyRawr Logo"></a>
             </div>
-            <ul class="items">
+            <ul class="items" id="list">
                 <li><a href="../index.php">Home</a></li>
-                <li><a href="../#products">Products</a></li>
+                <li><a href="listProduct.php">Products</a></li>
                 <li><a href="productRegister.php">Product Management</a></li>
             </ul>
+            <span class="bars" id="button"><i class="fas fa-bars"></i></span>
         </nav>
     </header>
 
-    <main>
-
-        
-        
+    <main id="main">
         <div class="div-register">
             <div class="register-form">
                 <div class="div-products">
@@ -60,9 +58,7 @@
                 </form>
             </div>
             <div class="jimmy-img"><img src="../public/img/Jimmy.png" alt="Jimmy"></div>
-            
         </div>
-
     </main>
 
     <section>
@@ -85,14 +81,16 @@
     </section>
 
     <footer>
-    <div>
-        <p>Copyright &#169 2021 CandyRawr - All Rights Reserved</p>
-        <a href="https://cutt.ly/OQ6nOwa" target="_BLANK"><i class="fas fa-globe"></i></a>
-        <a href="https://github.com/daviosoo" target="_BLANK"><i class="fab fa-github"></i></a>
-    </div>
+      <div>
+          <p>Copyright &#169 2021 CandyRawr - All Rights Reserved</p>
+          <a href="https://cutt.ly/OQ6nOwa" target="_BLANK"><i class="fas fa-globe"></i></a>
+          <a href="https://github.com/daviosoo" target="_BLANK"><i class="fab fa-github"></i></a>
+      </div>
     </footer>
 
+<script src="../public/js/main.js"></script>
 <script type="module" src="../public/js/showmodal.js"></script>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 </html>

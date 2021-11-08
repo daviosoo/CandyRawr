@@ -19,15 +19,16 @@
             <div class="div-logo">
                 <a href="index.php"><img class="img-logo" src="public/img/Logo.png" alt="CandyRawr Logo"></a>
             </div>
-            <ul class="items">
+            <ul class="items" id="list">
                 <li><a href="index.php">Home</a></li>
                 <li><a href="views/listProduct.php">Products</a></li>
                 <li><a href="views/productRegister.php">Product Management</a></li>
             </ul>
+            <span class="bars" id="button"><i class="fas fa-bars"></i></span>
         </nav>
     </header>
 
-    <main>
+    <main id="main">
         <div class="div-banner">
             <div id="carouselExampleIndicators" class="carousel slide w-100 img-fluid" data-bs-ride="carousel">
                 <div class="carousel-indicators">
@@ -37,13 +38,13 @@
                 </div>
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                    <img src="public/img/Bann1.png" class="d-block img-banner" alt="...">
+                        <img src="public/img/Bann1.png" class="d-block img-banner" alt="...">
                     </div>
                     <div class="carousel-item">
-                    <img src="public/img/Bann2.png" class="d-block img-banner" alt="...">
+                        <img src="public/img/Bann2.png" class="d-block img-banner" alt="...">
                     </div>
                     <div class="carousel-item">
-                    <img src="public/img/Bann3.png" class="d-block img-banner" alt="...">
+                        <img src="public/img/Bann3.png" class="d-block img-banner" alt="...">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -145,13 +146,14 @@
         </div>
     </main>
 
-<footer>
-    <div>
-        <p>Copyright &#169 2021 CandyRawr - All Rights Reserved</p>
-        <a href="https://cutt.ly/OQ6nOwa" target="_BLANK"><i class="fas fa-globe"></i></a>
-        <a href="https://github.com/daviosoo" target="_BLANK"><i class="fab fa-github"></i></a>
-    </div>
-</footer>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <footer>
+        <div>
+            <p>Copyright &#169 2021 CandyRawr - All Rights Reserved</p>
+            <a href="https://cutt.ly/OQ6nOwa" target="_BLANK"><i class="fas fa-globe"></i></a>
+            <a href="https://github.com/daviosoo" target="_BLANK"><i class="fab fa-github"></i></a>
+        </div>
+    </footer>
+    <script src="public/js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>
 </html>

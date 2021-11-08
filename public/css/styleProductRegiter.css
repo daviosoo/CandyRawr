@@ -35,16 +35,21 @@ header{
 }
 
 .items{
-    height: 4rem;
-    margin: 0 2rem .2rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem 2rem .5rem;
+    flex-wrap: nowrap;
 }
+
 .items li{
-    display: inline-block;
-    padding: .5rem;
     margin: 1rem;
+    padding: .5rem;
     transition: border-bottom .5s;
     border-bottom: var(--aqua-green) .2rem solid;
+    list-style: none;
 }
+
 .items li:hover{
     border-bottom: var(--green-light) .2rem solid;
 }
@@ -53,10 +58,23 @@ header{
     color: var(--green-light);
     font-weight: 600;
 }
+.bars{
+    position:absolute;
+    display: none;
+    cursor: pointer;
+    right: 5%;
+}
+.bars i{
+    font-size: 2rem;
+    color: var(--green-light);
+}
 
 main{
     height: 50rem;
     display: flex;
+    transition: margin .3s;
+    background: var(--green-light);
+    z-index: 100;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -85,7 +103,7 @@ main{
     font-weight: 800;
 }
 .div-register{
-    width: 60rem;
+    width: 70%;
     height: 40rem;
     display: flex;
     background: transparent;
@@ -101,13 +119,13 @@ main{
 }
 .form{
     margin-top: 1rem;
-    width: 100%;
+    width: 70%;
 }
 .input-form{
     border: none;
     outline: none;
     display: block;
-    width: 24rem;
+    width: 100%;
     height:2.5rem;
     margin: 1rem auto;
     padding: 5px 15px;
@@ -169,4 +187,54 @@ footer div a:hover{
 
 .bg-modal{
     background-color: var(--aqua-green) !important;
+}
+@media screen and (max-width:900px) {
+    .div-title{
+        margin: 0;
+    }
+    .div-register{
+        flex-direction: column;
+    }
+    .register-form{
+        width: 100%;
+    }
+    .jimmy-img{
+        display: none;
+    }
+    .form{
+        width: 100%;
+    }
+
+}
+@media screen and (max-width:790px) {
+    .bars{
+        display: initial;
+    }
+    .items{
+        display: none;
+    }
+    .items-active{
+        position: absolute;
+        flex-direction: column;
+        top: 6rem;
+        width: 100%;
+        margin: 2rem 0;
+        padding: 0;
+        display: flex;
+    }
+    .items li a{
+        color: #46afa1;
+    }
+    .main-active{
+        margin-top:10rem;
+    }
+}
+
+@media screen and (max-width:450px){
+    .div-title-img{
+        display: none;
+    }
+    .div-title h1{
+        text-align: center;
+    }
 }
