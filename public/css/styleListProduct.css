@@ -180,6 +180,10 @@ footer div a:hover{
     color: #cde6c3;
 }
 
+.p-modal{
+    color: var(--aqua-green);
+}
+
 @media screen and (max-width:790px) {
     .bars{
         display: initial;

@@ -47,9 +47,33 @@
                         <p>Marca <?= $product["brand"]?></p>
                         <h4>$ <?= $product["price"]?></h4>
                     </div>
-                    <button class="edit"><i class="fas fa-edit"></i></button>
-                    <button class="delete"><i class="fas fa-trash-alt"></i></button>
+                    
+                    <button href="#" class=" btn btn-primary edit"><i class="fas fa-edit"></i></button>
+                    <button href="#" class="delete" data-bs-toggle="modal" data-bs-target="#confirm<?= $product["id"] ?>"><i class="fas fa-trash-alt"></i></button>
+                    
                 </div>
+
+                     <section>
+                        <div class="modal fade" id="confirm<?= $product["id"] ?>" tabindex="-1"  >
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header text-white" style="background-color:#4FC3B3">
+                                        <h5 class="modal-title" >Candy Rawr</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                        <p class="p-modal"> ¿Estás seguro eliminar este producto? </p>
+                                        <p class="p-modal"><?= $product["id"] ?></p>
+                                    </div>
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                                        <a href="../Controllers/deleteProductController.php?id=<?= $product["id"] ?>" class="btn btn-danger">Aceptar</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                
             <?php endforeach ?>
         </div>
     </main>
@@ -62,5 +86,6 @@
         </div>
     </footer>
 <script src="../public/js/main.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
