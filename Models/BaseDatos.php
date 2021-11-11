@@ -28,7 +28,7 @@
         public function insertRecord($consultaSQL){
 
             try{
-                
+
                 $connection=$this->connectwithBD();
                 $operation=$connection->prepare($consultaSQL);
                 $result=$operation->execute();
@@ -46,7 +46,7 @@
         public function searchRecord($consultaSQL){
 
             try{
-               
+
                 $connection=$this->connectwithBD();
                 $operation=$connection->prepare($consultaSQL);
                 $operation->setFetchMode(PDO::FETCH_ASSOC);
@@ -62,9 +62,6 @@
             }
 
         }
-        
-            
-        
 
     }
 ?>

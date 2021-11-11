@@ -47,10 +47,10 @@
                         <p>Marca <?= $product["brand"]?></p>
                         <h4>$ <?= $product["price"]?></h4>
                     </div>
-                    
-                    <button href="#" class=" btn btn-primary edit"><i class="fas fa-edit"></i></button>
+
+                    <button href="#" class="edit" data-bs-toggle="modal" data-bs-target="#edit<?= $product["id"] ?>"><i class="fas fa-edit"></i></button>
                     <button href="#" class="delete" data-bs-toggle="modal" data-bs-target="#confirm<?= $product["id"] ?>"><i class="fas fa-trash-alt"></i></button>
-                    
+
                 </div>
 
                      <section>
@@ -61,7 +61,7 @@
                                         <h5 class="modal-title" >Candy Rawr</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
                                     </div>
-                                    <div class="modal-body">
+                                    <div class="modal-body" style="color:black !important;">
                                         <p class="p-modal"> ¿Estás seguro eliminar este producto? </p>
                                         <p class="p-modal"><?= $product["id"] ?></p>
                                     </div>
@@ -73,7 +73,46 @@
                             </div>
                         </div>
                     </section>
-                
+
+                     <section>
+                        <div class="modal fade" id="edit<?= $product["id"] ?>" tabindex="-1"  >
+                            <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header text-white" style="background-color:#4FC3B3">
+                                        <h5 class="modal-title" >Candy Rawr</h5>
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                    </div>
+                                    <div class="modal-body">
+
+                                        <div class="row d-flex justify-content-center">
+                                            <div class="col-6">
+                                                <img src="<?= $product["photo"] ?>" alt="photo" class="img-fluid w-100">
+                                            </div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="col-12">
+                                                <form action="../controllers/editProductController.php?id=<?=$product["id"]?>" method="POST">
+                                                    <div class="mb-3">
+                                                        <label  class="form-label mt-3  ">Nombre Producto</label>
+                                                        <input name="name" type="text" class="form-control" value="<?= $product["name"] ?>">
+                                                        <label  class="form-label mt-3  ">Marca Producto</label>
+                                                        <input name="brand" type="text" class="form-control" value="<?= $product["brand"] ?>">
+                                                        <label  class="form-label mt-3  ">Precio Producto</label>
+                                                        <input name="price" type="text" class="form-control" value="<?= $product["price"] ?>">
+                                                        <label  class="form-label mt-3  ">Descripcion Producto</label>
+                                                        <textarea name="description" class="form-control"><?= $product["description"] ?></textarea>
+                                                    </div>
+                                                    <button type="submit" class="btn btn-warning w-100" name="editButton">Editar</button>
+                                                </form>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+
             <?php endforeach ?>
         </div>
     </main>

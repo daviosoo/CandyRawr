@@ -39,7 +39,7 @@
 
         public function edit($id){
 
-            $consultaSQL="UPDATE products SET name='$this->name',description='$this->description',photo='$this->photo' WHERE id='$id'";
+            $consultaSQL="UPDATE products SET name='$this->name', brand='$this->brand', price='$this->price',description='$this->description' WHERE id='$id'";
 
             return $consultaSQL;
 

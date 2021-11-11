@@ -8,7 +8,7 @@
     include("../Models/Product.php");
 
     $id=$_GET["id"];
-    
+
     $product=new Product(null,null,null,null,null);
 
     $database=new DataBase();
