@@ -46,13 +46,13 @@
                         <h1>Product Management</h1>
                     </div>
                 </div>
-                <form action="../Controllers/prController.php" method="POST" class="form">
+                <form action="../Controllers/prController.php" method="POST" class="form" id="form">
 
-                    <input type="text" placeholder="Name" class="input-form" name="name">
-                    <input type="text" placeholder="Brand" class="input-form" name="brand">
-                    <input type="text" placeholder="Price" class="input-form" name="price">
+                    <input id="name" type="text" placeholder="Name" class="input-form" name="name">
+                    <input id="brand" type="text" placeholder="Brand" class="input-form" name="brand">
+                    <input id="price" type="text" placeholder="Price" class="input-form" name="price">
                     <input type="text" placeholder="Photo" class="input-form" name="photo">
-                    <textarea placeholder="Description" class="input-form area" name="description"></textarea>
+                    <textarea id="description"placeholder="Description" class="input-form area" name="description"></textarea>
 
                     <input type="submit" class="input-form submit" value="ADD" name="button">
                 </form>
@@ -89,6 +89,7 @@
     </footer>
 
 <script src="../public/js/main.js"></script>
+<script src="../public/js/verifyForm.js"></script>
 <script type="module" src="../public/js/showmodal.js"></script>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>

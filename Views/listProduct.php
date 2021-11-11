@@ -91,16 +91,16 @@
                                         </div>
                                         <div class="row">
                                             <div class="col-12">
-                                                <form action="../controllers/editProductController.php?id=<?=$product["id"]?>" method="POST">
+                                                <form action="../controllers/editProductController.php?id=<?=$product["id"]?>" method="POST" id="form">
                                                     <div class="mb-3">
                                                         <label  class="form-label mt-3  ">Nombre Producto</label>
-                                                        <input name="name" type="text" class="form-control" value="<?= $product["name"] ?>">
+                                                        <input id="name" name="name" type="text" class="form-control" value="<?= $product["name"] ?>">
                                                         <label  class="form-label mt-3  ">Marca Producto</label>
-                                                        <input name="brand" type="text" class="form-control" value="<?= $product["brand"] ?>">
+                                                        <input id="brand" name="brand" type="text" class="form-control" value="<?= $product["brand"] ?>">
                                                         <label  class="form-label mt-3  ">Precio Producto</label>
-                                                        <input name="price" type="text" class="form-control" value="<?= $product["price"] ?>">
+                                                        <input id="price" name="price" type="text" class="form-control" value="<?= $product["price"] ?>">
                                                         <label  class="form-label mt-3  ">Descripcion Producto</label>
-                                                        <textarea name="description" class="form-control"><?= $product["description"] ?></textarea>
+                                                        <textarea id="description" name="description" class="form-control"><?= $product["description"] ?></textarea>
                                                     </div>
                                                     <button type="submit" class="btn btn-warning w-100" name="editButton">Editar</button>
                                                 </form>
@@ -124,7 +124,9 @@
             <a href="https://github.com/daviosoo" target="_BLANK"><i class="fab fa-github"></i></a>
         </div>
     </footer>
+
 <script src="../public/js/main.js"></script>
+<script src="../public/js/verifyForm.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </body>
 </html>
